@@ -14,11 +14,6 @@ interface Neuron {
   accent: boolean;
 }
 
-/**
- * Animated neural-network backdrop: neuron nodes drift with a wavy (sine)
- * motion and connect to nearby neighbours with gently curved edges. Canvas-
- * based, neutral palette, and static (single frame) under reduced-motion.
- */
 export function NeuralNetwork() {
   const ref = useRef<HTMLCanvasElement | null>(null);
 
@@ -27,8 +22,6 @@ export function NeuralNetwork() {
     if (!el) return;
     const context = el.getContext("2d");
     if (!context) return;
-    // Alias to non-null-typed consts so the narrowing holds inside the
-    // nested build()/frame() closures (TS won't carry it otherwise).
     const canvas = el;
     const ctx = context;
 

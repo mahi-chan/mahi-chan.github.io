@@ -1,12 +1,3 @@
-/**
- * SINGLE SOURCE OF TRUTH for all site content.
- *
- * Populated from github.com/mahi-chan. Your GitHub profile has no display
- * name / bio / location set, so those were drafted from what your repos show
- * (AI / computer vision / robotics, mostly Python). Edit anything freely —
- * especially: name, email, the LinkedIn URL, and exact dates in `experience`.
- */
-
 export interface Social {
   label: string;
   href: string;
@@ -90,7 +81,7 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: "Mahi", // ← set your full name
+  name: "Mahi",
   initials: "M",
   role: "AI & Computer Vision Developer",
   roles: [
@@ -102,7 +93,7 @@ export const profile: Profile = {
   tagline:
     "I build machine-learning and computer-vision systems — from camouflaged-object detection to autonomous racing and real-world detection on microcontrollers. CSE student, mostly writing Python.",
   location: "Khulna, Bangladesh",
-  email: "mahi2113@cseku.ac.bd", // ← change if you prefer another contact address
+  email: "mahi2113@cseku.ac.bd",
   avatarUrl: "https://avatars.githubusercontent.com/u/130440048?v=4",
   githubUrl: "https://github.com/mahi-chan",
   resumeUrl: "",
@@ -120,8 +111,6 @@ export const profile: Profile = {
   socials: [
     { label: "GitHub", href: "https://github.com/mahi-chan", icon: "github" },
     { label: "Email", href: "mailto:mahi2113@cseku.ac.bd", icon: "mail" },
-    // Add your LinkedIn:
-    // { label: "LinkedIn", href: "https://linkedin.com/in/your-handle", icon: "linkedin" },
   ],
   services: [
     {

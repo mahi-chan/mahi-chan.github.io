@@ -31,7 +31,6 @@ export function Hero() {
   return (
     <section id="home" className="relative flex min-h-screen items-center pt-24 pb-16">
       <div className="container-content grid items-center gap-12 lg:grid-cols-12">
-        {/* Text */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -69,7 +68,6 @@ export function Hero() {
             {profile.location}
           </motion.div>
 
-          {/* CTAs */}
           <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#projects"
@@ -86,7 +84,6 @@ export function Hero() {
             </a>
           </motion.div>
 
-          {/* Socials */}
           <motion.div variants={item} className="mt-8 flex items-center gap-3">
             {profile.socials.map((s) => (
               <a
@@ -103,7 +100,6 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Avatar + stats */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -132,7 +128,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll cue */}
       <a
         href="#about"
         aria-label="Scroll to about"

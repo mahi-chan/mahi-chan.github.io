@@ -2,8 +2,6 @@ import type { Social } from "../data/profile";
 
 type IconProps = { className?: string };
 
-/** Brand + contact glyphs as inline SVG (no dependency on brand-icon packages). */
-
 export function GitHubIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>

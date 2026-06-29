@@ -1,4 +1,3 @@
-/** GitHub-style language → color map for the little language dots. */
 export const languageColors: Record<string, string> = {
   TypeScript: "#3178c6",
   JavaScript: "#f1e05a",

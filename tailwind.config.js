@@ -4,15 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Warm, neutral, professional — Claude-like restraint.
-        bg: "#f6f5f0", // warm ivory
-        surface: "#fffdf8", // warm white cards
-        surface2: "#efece3", // subtle fills / pills
-        line: "#e6e2d6", // hairline borders
-        muted: "#75736b", // secondary text
-        fg: "#1d1b17", // primary text (warm near-black)
+        bg: "#f6f5f0",
+        surface: "#fffdf8",
+        surface2: "#efece3",
+        line: "#e6e2d6",
+        muted: "#75736b",
+        fg: "#1d1b17",
         accent: {
-          DEFAULT: "#c15f3c", // restrained terracotta — used sparingly
+          DEFAULT: "#c15f3c",
           soft: "#d3795a",
           dim: "#9d4628",
         },

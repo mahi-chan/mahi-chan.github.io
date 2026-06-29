@@ -1,6 +1,5 @@
 import { profile } from "../data/profile";
 
-/** Full-bleed scrolling ticker of technologies — pauses on hover. */
 export function Marquee() {
   const items = [...profile.marquee, ...profile.marquee];
 

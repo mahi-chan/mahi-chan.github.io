@@ -10,7 +10,6 @@ interface RevealProps {
   y?: number;
 }
 
-/** Fade + rise into view, once, when scrolled near. Respects reduced-motion via CSS. */
 export function Reveal({ children, className, delay = 0, y = 22 }: RevealProps) {
   return (
     <motion.div

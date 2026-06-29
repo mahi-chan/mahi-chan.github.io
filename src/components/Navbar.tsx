@@ -56,7 +56,6 @@ export function Navbar() {
       }
     >
       <nav className="container-content flex h-16 items-center justify-between">
-        {/* Monogram */}
         <a
           href="#home"
           className="group flex items-center gap-2"
@@ -67,7 +66,6 @@ export function Navbar() {
           </span>
         </a>
 
-        {/* Desktop links */}
         <ul className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
             <li key={link.id}>
@@ -87,7 +85,6 @@ export function Navbar() {
           ))}
         </ul>
 
-        {/* Right side */}
         <div className="flex items-center gap-1">
           <a
             href={profile.githubUrl}
@@ -120,7 +117,6 @@ export function Navbar() {
             </a>
           )}
 
-          {/* Mobile toggle */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -133,7 +129,6 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
       {open && (
         <div className="border-t border-line bg-bg/95 backdrop-blur-md md:hidden">
           <ul className="container-content flex flex-col py-3">
