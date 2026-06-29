@@ -61,8 +61,8 @@ export function NeuralNetwork() {
           phase: Math.random() * Math.PI * 2,
           amp: 10 + Math.random() * 24,
           speed: 0.2 + Math.random() * 0.5,
-          vx: (Math.random() - 0.5) * 0.16,
-          vy: (Math.random() - 0.5) * 0.16,
+          vx: (Math.random() - 0.5) * 0.045,
+          vy: (Math.random() - 0.5) * 0.045,
           r: 1.4 + Math.random() * 2.1,
           accent: Math.random() < 0.18,
         };
@@ -70,7 +70,7 @@ export function NeuralNetwork() {
     }
 
     function frame() {
-      t += 0.006;
+      t += 0.0022;
       ctx.clearRect(0, 0, width, height);
 
       for (const n of neurons) {
