@@ -46,5 +46,27 @@ const stats = {
   joined: String(new Date(user.created_at).getFullYear()),
 };
 
-writeFileSync("src/data/github.json", JSON.stringify({ projects, topLanguages, stats }, null, 2) + "\n");
+const topicCounts = {};
+for (const r of repos) for (const t of r.topics ?? []) topicCounts[t] = (topicCounts[t] ?? 0) + 1;
+const topTopics = Object.entries(topicCounts).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([t]) => t);
+
+const langNames = topLanguages.map((l) => l.name);
+const skills = [{ category: "Languages", items: langNames }];
+if (topTopics.length) skills.push({ category: "Topics", items: topTopics });
+
+const highlights = [
+  { label: "Main language", value: langNames[0] ?? "—" },
+  { label: "Public repos", value: String(stats.repos) },
+  ...(user.location ? [{ label: "Based in", value: user.location }] : []),
+  { label: "Stars earned", value: String(stats.stars) },
+];
+
+// empty bio/location are omitted so profile.ts keeps its hand-written fallback
+const out = {
+  projects, topLanguages, stats, skills, highlights,
+  marquee: [...langNames, ...topTopics],
+  ...(user.bio && { tagline: user.bio }),
+  ...(user.location && { location: user.location }),
+};
+writeFileSync("src/data/github.json", JSON.stringify(out, null, 2) + "\n");
 console.log(`synced ${projects.length} projects, ${stats.repos} repos`);

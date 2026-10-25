@@ -267,4 +267,11 @@ const base: Profile = {
   stats: { repos: 17, stars: 0, followers: 4, following: 3, joined: "2023" },
 };
 
-export const profile: Profile = { ...base, ...(github as Partial<Profile>) };
+const synced = github as Partial<Profile>;
+const autoGroups = new Set((synced.skills ?? []).map((g) => g.category));
+
+export const profile: Profile = {
+  ...base,
+  ...synced,
+  skills: [...(synced.skills ?? []), ...base.skills.filter((g) => !autoGroups.has(g.category))],
+};
