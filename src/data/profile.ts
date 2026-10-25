@@ -1,3 +1,5 @@
+import github from "./github.json";
+
 export interface Social {
   label: string;
   href: string;
@@ -80,7 +82,7 @@ export interface Profile {
   stats: Stats;
 }
 
-export const profile: Profile = {
+const base: Profile = {
   name: "Mahi",
   initials: "M",
   role: "AI & Computer Vision Developer",
@@ -264,3 +266,5 @@ export const profile: Profile = {
   awards: [],
   stats: { repos: 17, stars: 0, followers: 4, following: 3, joined: "2023" },
 };
+
+export const profile: Profile = { ...base, ...(github as Partial<Profile>) };
