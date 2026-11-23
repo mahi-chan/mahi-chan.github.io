@@ -31,7 +31,7 @@ export function Experience() {
                         <span className="pill">{e.period}</span>
                       </div>
                       <p className="mt-1 text-sm font-medium text-accent">{e.org}</p>
-                      <p className="mt-2 text-sm leading-relaxed text-muted">{e.description}</p>
+                      {e.description && <p className="mt-2 text-sm leading-relaxed text-muted">{e.description}</p>}
                       <div className="mt-3 flex flex-wrap gap-1.5">
                         {e.tags.map((t) => (
                           <span key={t} className="pill px-2.5 py-0.5 text-[11px]">
