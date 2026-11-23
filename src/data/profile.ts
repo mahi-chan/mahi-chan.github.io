@@ -85,24 +85,24 @@ export interface Profile {
 const base: Profile = {
   name: "Mahi",
   initials: "M",
-  role: "AI & Computer Vision Developer",
+  role: "M.Sc. Student & Graduate Research Assistant",
   roles: [
-    "Machine Learning Developer",
-    "Computer Vision Enthusiast",
-    "Robotics & Autonomy",
-    "CSE @ Khulna University",
+    "Graduate Research Assistant",
+    "Computer Vision Researcher",
+    "Reinforcement Learning & Multi-Agent Systems",
+    "MLOps",
   ],
-  tagline:
-    "I build machine-learning and computer-vision systems — from camouflaged-object detection to autonomous racing and real-world detection on microcontrollers. CSE student, mostly writing Python.",
+  tagline: 
+    "M.Sc. CSE student and Graduate Research Assistant at Khulna University. I research computer vision, and build with reinforcement learning, multi-agent LLM systems and MLOps — the point where a model leaves the notebook and has to work for real.",
   location: "Khulna, Bangladesh",
   email: "mahi2113@cseku.ac.bd",
   avatarUrl: "https://avatars.githubusercontent.com/u/130440048?v=4",
   githubUrl: "https://github.com/mahi-chan",
   resumeUrl: "",
   about: [
-    "I'm a Computer Science & Engineering student focused on AI, machine learning and computer vision. I like teaching machines to see — my main project, camoXpert, detects camouflaged objects, and I've explored mixture-of-experts variants to push it further.",
-    "Beyond vision, I tinker with autonomous systems — reinforcement-learning racing agents — and applied builds like a microcontroller-based traffic-rule-violation detector for three-wheelers. Most of my work is in Python, with C++ and JavaScript along the way.",
-    "I learn in the open: my experiments, labs and projects all live on GitHub. I care about clean, reproducible code and projects that solve real problems.",
+    "I'm an M.Sc. CSE student and Graduate Research Assistant at Khulna University, previously an AI/ML Engineer at MindPixel BD. My research is in computer vision; outside it I build with reinforcement learning, multi-agent LLM systems and MLOps.",
+    "I care most about the point where a model leaves the notebook and has to work for real. I'm now exploring how simulation and reinforcement learning can be used to test public policy before it reaches people.",
+    "I learn in the open — my experiments and projects live on GitHub, and I write AI tutorials on a GitHub Pages site. I also organise: the gaming segment and the datathon at the regional CSE fest, and a student Discord community for study resources and game development.",
   ],
   highlights: [
     { label: "Focus", value: "AI / CV" },
@@ -116,77 +116,71 @@ const base: Profile = {
   ],
   services: [
     {
-      title: "Machine Learning",
-      description:
-        "Designing, training and fine-tuning models — from detection networks to mixture-of-experts experiments.",
-      icon: "brain",
-    },
-    {
       title: "Computer Vision",
-      description:
-        "Object detection, segmentation and image processing, including camouflaged-object detection.",
+      description: "Detection and segmentation research, including camouflaged object detection with Mamba and Mixture-of-Experts.",
       icon: "eye",
     },
     {
-      title: "Robotics & Autonomy",
-      description:
-        "Reinforcement learning and control — autonomous racing agents and embedded, real-world vision.",
+      title: "Reinforcement Learning",
+      description: "Racing and simulation agents in Gymnasium/MuJoCo — SAC, PPO+LSTM, Dreamer and Meta-RL compared head to head.",
       icon: "bot",
     },
     {
-      title: "Software & Tooling",
-      description: "Clean, reproducible Python, plus C++ and JavaScript for everything around the models.",
-      icon: "code",
+      title: "Agents & MLOps",
+      description: "Multi-agent systems on LangGraph and MCP, with experiments tracked and monitored in MLflow, Prometheus and Grafana.",
+      icon: "brain",
+    },
+    {
+      title: "Web & Backend",
+      description: "FastAPI, Django and Next.js services backed by PostgreSQL, Redis and Qdrant.",
+      icon: "server",
     },
   ],
   experience: [
     {
-      role: "Computer Vision Research — camoXpert",
-      org: "Independent / academic",
-      period: "2024 — Present",
-      description:
-        "Building camoXpert, a deep-learning model for camouflaged object detection, and exploring a model-level mixture-of-experts design to improve it.",
-      tags: ["PyTorch", "OpenCV", "Deep Learning"],
+      role: "M.Sc. in Computer Science & Engineering",
+      org: "Khulna University",
+      period: "Jan 2026 — Present",
+      description: "Research in machine learning and computer vision, as a Graduate Research Assistant.",
+      tags: ["Machine Learning", "Computer Vision"],
+      kind: "education",
+    },
+    {
+      role: "AI/ML Engineer",
+      org: "MindPixel BD",
+      period: "Jun 2025 — Mar 2026",
+      description: "",
+      tags: [],
       kind: "work",
     },
     {
-      role: "Robotics & Applied ML",
-      org: "Course & personal projects",
-      period: "2023 — Present",
-      description:
-        "Reinforcement-learning agents for autonomous racing, and a microcontroller-based traffic-rule-violation detector for three-wheelers.",
-      tags: ["Reinforcement Learning", "Computer Vision", "Embedded"],
+      role: "Intern",
+      org: "Khulna City Corporation",
+      period: "Jan 2025 — Mar 2025",
+      description: "",
+      tags: [],
       kind: "work",
     },
     {
       role: "B.Sc. in Computer Science & Engineering",
       org: "Khulna University",
-      period: "2022 — Present",
-      description:
-        "Studying CSE with hands-on labs in image processing, compiler design, databases and algorithms.",
-      tags: ["Algorithms", "DBMS", "Compilers"],
+      period: "Feb 2022 — Mar 2026",
+      description: "",
+      tags: [],
       kind: "education",
     },
   ],
   skills: [
-    { category: "Languages", items: ["Python", "C++", "JavaScript", "C", "SQL"] },
-    { category: "ML & Vision", items: ["PyTorch", "OpenCV", "NumPy", "scikit-learn", "TensorFlow"] },
-    { category: "Tools", items: ["Git", "Linux", "Jupyter", "VS Code", "Docker"] },
-    { category: "CS foundations", items: ["Algorithms", "DBMS", "Compiler Design", "Image Processing"] },
+    { category: "Machine Learning", items: ["Deep Learning", "Computer Vision", "Reinforcement Learning", "Gymnasium", "MuJoCo"] },
+    { category: "Agents & MLOps", items: ["LangGraph", "MCP", "MLflow", "Prometheus", "Grafana"] },
+    { category: "Web & Backend", items: ["FastAPI", "Django", "Next.js"] },
+    { category: "Databases", items: ["PostgreSQL", "Redis", "Qdrant"] },
+    { category: "Game Engines", items: ["Unreal Engine 4", "Godot"] },
+    { category: "Operating System", items: ["Linux (Ubuntu)"] },
   ],
   marquee: [
-    "Python",
-    "PyTorch",
-    "OpenCV",
-    "NumPy",
-    "C++",
-    "TensorFlow",
-    "scikit-learn",
-    "Git",
-    "Linux",
-    "JavaScript",
-    "Jupyter",
-    "SQL",
+    "Python", "PyTorch", "LangGraph", "MCP", "MLflow", "FastAPI", "Django", "Next.js",
+    "PostgreSQL", "Redis", "Qdrant", "Unreal Engine", "Godot", "Linux",
   ],
   projects: [
     {
@@ -263,15 +257,41 @@ const base: Profile = {
     { name: "C++", pct: 8 },
     { name: "JavaScript", pct: 7 },
   ],
-  awards: [],
+  awards: [
+    {
+      title: "Graduate Research Assistantship",
+      org: "Khulna University",
+      year: "2026",
+      description: "Awarded a Graduate Research Assistantship.",
+    },
+    {
+      title: "Merit-Based Scholarship",
+      org: "Khulna University",
+      year: "2022",
+      description: "Awarded a scholarship for academic performance.",
+    },
+  ],
   stats: { repos: 17, stars: 0, followers: 4, following: 3, joined: "2023" },
 };
 
 const synced = github as Partial<Profile>;
+
+const cvBlurbs: Record<string, string> = {
+  camoxpert: "Camouflaged object detection pairing Mamba state space layers with Mixture-of-Experts; benchmarked against COD methods from 2020–2024.",
+  racebrain: "F1 racing agent in Gymnasium/MuJoCo comparing SAC, PPO+LSTM, Dreamer and Meta-RL, with every experiment tracked in an MLOps pipeline.",
+  researchops: "Eight agents (literature scout, gap hunter, experiment designer, critic and more) splitting up a research workflow on LangGraph, MCP, FastAPI, Qdrant and MLflow.",
+  fleetsim: "Multi-robot warehouse simulation with the robots coordinated through LangGraph.",
+};
+const key = (n: string) => n.toLowerCase().replace(/[^a-z0-9]/g, "");
+const projects = (synced.projects ?? base.projects).map((p) => ({
+  ...p,
+  description: cvBlurbs[key(p.name)] ?? p.description,
+}));
 const autoGroups = new Set((synced.skills ?? []).map((g) => g.category));
 
 export const profile: Profile = {
   ...base,
   ...synced,
+  projects,
   skills: [...(synced.skills ?? []), ...base.skills.filter((g) => !autoGroups.has(g.category))],
 };
